@@ -44,4 +44,20 @@ public class BaseDaoSupport<T extends Serializable, P extends Serializable> {
     }
 
 
+    protected int insert(T t) {
+        EntityOption.UpdateObject updateObject = entityOption.createInsertObject(t);
+        return writeJdbcTemplate.update(updateObject.getSql(), updateObject.getObjectValue());
+    }
+
+    protected  int update(T t) {
+        EntityOption.UpdateObject updateObject = entityOption.createUpdateObject(t);
+        return writeJdbcTemplate.update(updateObject.getSql(), updateObject.getObjectValue());
+    }
+
+    protected  int delete(T t) {
+        EntityOption.UpdateObject updateObject = entityOption.createDeleteObject(t);
+        return writeJdbcTemplate.update(updateObject.getSql(), updateObject.getObjectValue());
+    }
+
+
 }

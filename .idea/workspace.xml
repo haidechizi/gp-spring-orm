@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bfb98e0-1e9e-4e6a-b24d-aa6e23f38f92" name="Default" comment="" />
+    <list default="true" id="1bfb98e0-1e9e-4e6a-b24d-aa6e23f38f92" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BaseDaoSupport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="212">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,37 +41,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryRuleSqlBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRuleSqlBuilder.java">
+      <file leaf-file-name="EntityOption.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-407">
-              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="152">
+              <caret line="292" column="53" lean-forward="true" selection-start-line="292" selection-start-column="53" selection-end-line="292" selection-end-column="53" />
               <folding>
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3419#3420#0" expanded="true" />
+                <element signature="e#3445#3446#0" expanded="true" />
+                <element signature="e#5839#5840#0" expanded="true" />
+                <element signature="e#5879#5880#0" expanded="true" />
+                <element signature="e#5923#5924#0" expanded="true" />
+                <element signature="e#5965#5966#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/App.java">
+      <file leaf-file-name="SysLogDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="326">
+              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java">
+      <file leaf-file-name="SysLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="228">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,6 +102,9 @@
       <find>allColumns</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -91,14 +122,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/GenericUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application-jdbc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRuleSqlBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java" />
       </list>
     </option>
   </component>
@@ -138,7 +169,7 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="gp-spring-orm" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework:spring-jdbc:4.3.14.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.alibaba:druid:1.1.3" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -147,18 +178,18 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1150" />
     <option name="y" value="185" />
     <option name="width" value="1370" />
     <option name="height" value="910" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,7 +258,21 @@
               <item name="gp-spring-orm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gp-spring-orm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gp-spring-orm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gp-spring-orm" type="b2602c69:ProjectViewProjectNode" />
@@ -264,6 +309,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -289,9 +335,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AppTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gp-spring-orm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gupaoedu" />
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.AppTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AppTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gp-spring-orm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gupaoedu" />
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.AppTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="AppTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gp-spring-orm" />
@@ -306,6 +398,29 @@
       <option name="PACKAGE_NAME" value="com.gupaoedu" />
       <option name="MAIN_CLASS_NAME" value="com.gupaoedu.AppTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AppTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gp-spring-orm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gupaoedu" />
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.AppTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -354,9 +469,18 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.test" />
+      <item itemvalue="JUnit.AppTest.insert" />
+      <item itemvalue="JUnit.AppTest.update" />
+      <item itemvalue="JUnit.AppTest.delete" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest.test" />
+        <item itemvalue="JUnit.AppTest.delete" />
+        <item itemvalue="JUnit.AppTest.update" />
+        <item itemvalue="JUnit.AppTest.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -372,44 +496,45 @@
       <updated>1555819402067</updated>
       <workItem from="1555819404651" duration="11309000" />
       <workItem from="1555934112247" duration="1623000" />
-      <workItem from="1555936570500" duration="2471000" />
+      <workItem from="1555936570500" duration="4132000" />
+      <workItem from="1556093898002" duration="7143000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 01m 10s.xml">
+    <history-entry file="AppTest_test - 2019.04.24 at 18h 50m 32s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 02m 08s.xml">
+    <history-entry file="AppTest_test - 2019.04.24 at 18h 50m 58s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 02m 32s.xml">
+    <history-entry file="AppTest_update - 2019.04.24 at 18h 51m 12s.xml">
+      <configuration name="AppTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2019.04.24 at 18h 51m 18s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 03m 41s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="AppTest_delete - 2019.04.24 at 18h 55m 18s.xml">
+      <configuration name="AppTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 03m 47s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="AppTest_delete - 2019.04.24 at 18h 55m 41s.xml">
+      <configuration name="AppTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 14m 42s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="AppTest_delete - 2019.04.24 at 18h 56m 22s.xml">
+      <configuration name="AppTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 16m 05s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="AppTest_delete - 2019.04.24 at 18h 56m 55s.xml">
+      <configuration name="AppTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 16m 48s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
+    <history-entry file="AppTest_delete - 2019.04.24 at 18h 57m 45s.xml">
+      <configuration name="AppTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 17m 12s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2019.04.22 at 21h 17m 21s.xml">
+    <history-entry file="AppTest_test - 2019.04.24 at 18h 57m 56s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15403000" />
+    <option name="totallyTimeSpent" value="24207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -424,20 +549,20 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16957104" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281027" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.25938338" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" visible="true" weight="0.25938338" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942938" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -454,7 +579,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -538,6 +677,8 @@
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -548,8 +689,10 @@
           <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
+            <element signature="e#5839#5840#0" expanded="true" />
+            <element signature="e#5879#5880#0" expanded="true" />
+            <element signature="e#5923#5924#0" expanded="true" />
+            <element signature="e#5965#5966#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -558,26 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-821">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,23 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13110">
           <caret line="763" column="16" selection-start-line="763" selection-start-column="16" selection-end-line="763" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/GenericUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar!/javax/persistence/Table.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -654,38 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -710,31 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRuleSqlBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-407">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -742,10 +791,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRuleSqlBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/GenericUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/QueryRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar!/javax/persistence/Table.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/entity/SysLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar!/javax/persistence/Id.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/demo/dao/SysLogDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/EntityOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="292" column="53" lean-forward="true" selection-start-line="292" selection-start-column="53" selection-end-line="292" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3419#3420#0" expanded="true" />
+            <element signature="e#3445#3446#0" expanded="true" />
+            <element signature="e#5839#5840#0" expanded="true" />
+            <element signature="e#5879#5880#0" expanded="true" />
+            <element signature="e#5923#5924#0" expanded="true" />
+            <element signature="e#5965#5966#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/orm/BaseDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gupaoedu/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state relative-caret-position="218">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -1,9 +1,6 @@
 package com.gupaoedu.demo.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.io.Serializable;
 
 
@@ -12,6 +9,7 @@ import java.io.Serializable;
 public class SysLog implements Serializable {
 
 
+    @Id
     private String id;
     private String title;
     private String type;

@@ -3,6 +3,7 @@ package com.gupaoedu.orm;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.jdbc.core.RowMapper;
@@ -11,7 +12,9 @@ import java.lang.reflect.Field;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class EntityOption<T> {
@@ -22,11 +25,13 @@ public class EntityOption<T> {
 
     private String tableName;
 
-    private String pk;
+    private String id;
 
     private final RowMapper<T> rowMapper;
 
-    private final Map<String, Field> paramNamemapping;
+    private final Map<String, Field> paramNameMapping;
+
+    private final Map<String, String> paramSqlNameMapping;
 
 
     public EntityOption(Class<?> clazz) throws Exception {
@@ -46,7 +51,9 @@ public class EntityOption<T> {
             throw new Exception("table name 为设置");
         }
 
-        paramNamemapping = new HashMap<>(32);
+        paramNameMapping = new HashMap<>(32);
+
+        paramSqlNameMapping = new HashMap<>(32);
 
         createAllColumns(clazz);
 
@@ -66,16 +73,22 @@ public class EntityOption<T> {
                     paramName = column.name();
 
                 }
-                paramNamemapping.put(paramName, field);
+                paramNameMapping.put(paramName, field);
+
 
             } else {
-                paramNamemapping.put(field.getName(), field);
+                paramNameMapping.put(field.getName(), field);
+
             }
+            paramSqlNameMapping.put(field.getName(), paramName);
             if (index != 0) {
                 sb.append(",");
             }
+            if (field.isAnnotationPresent(Id.class)) {
+                this.id = field.getName();
+            }
             sb.append(paramName).append(" AS \"").append(field.getName()).append("\"");
-            index ++;
+            index++;
         }
         this.allColumns = sb.toString();
 
@@ -113,12 +126,12 @@ public class EntityOption<T> {
         return tableName;
     }
 
-    public String getPk() {
-        return pk;
+    public String getId() {
+        return id;
     }
 
     private void setValue(T t, String columnName, Object value) throws Exception {
-        Field field = this.paramNamemapping.get(columnName);
+        Field field = this.paramNameMapping.get(columnName);
         if (field == null) {
             throw new Exception("columeName ：" + columnName + " is not exists");
         }
@@ -128,5 +141,179 @@ public class EntityOption<T> {
 
     public RowMapper<T> getRowMapper() {
         return this.rowMapper;
+    }
+
+    public UpdateObject createInsertObject(T t) {
+        if (t == null) {
+            throw new RuntimeException("object is null");
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("insert into ").append(this.tableName);
+        List<Object> paramValues = new ArrayList<>();
+
+        StringBuilder paramSb = new StringBuilder();
+
+        StringBuilder valueSb = new StringBuilder();
+
+        for (Field field : clazz.getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object obj = field.get(t);
+                if (obj == null) {
+                    continue;
+
+                }
+                if (String.class == field.getType()) {
+                    if ("".equals(obj)) {
+                        continue;
+                    }
+                }
+                paramValues.add(obj);
+                paramSb.append(paramSqlNameMapping.get(field.getName())).append(",");
+                valueSb.append("?,");
+
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        if (paramValues.size() == 0) {
+            throw new RuntimeException("对象未设置属性");
+        }
+        String fieldStr = paramSb.toString();
+        fieldStr = fieldStr.substring(0, fieldStr.length() - 1);
+
+        String valueStr = valueSb.toString();
+        valueStr = valueStr.substring(0, valueStr.length() - 1);
+
+        sb.append("(").append(fieldStr).append(")").append("values").append("(").append(valueStr).append(")");
+
+        UpdateObject updateObject = new UpdateObject(sb.toString(), paramValues.toArray());
+
+        return updateObject;
+    }
+
+
+    public UpdateObject createUpdateObject(T t) {
+        if (t == null) {
+            throw new RuntimeException("object is null");
+        }
+
+        if (this.id == null || "".equals(this.id.trim())) {
+            throw new RuntimeException("id is null");
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("update ").append(this.tableName).append(" set ");
+        List<Object> paramValues = new ArrayList<>();
+
+        StringBuilder paramSb = new StringBuilder();
+
+        Object idValue = null;
+
+        for (Field field : clazz.getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+
+                Object obj = field.get(t);
+                if (field.getName().equals(this.id)) {
+                    if(obj == null || "".equals(obj)) {
+                        throw new RuntimeException("id is null");
+                    }
+                    idValue = obj;
+                    continue;
+                }
+                if (obj == null) {
+                    continue;
+
+                }
+                if (String.class == field.getType()) {
+                    if ("".equals(obj)) {
+                        continue;
+                    }
+                }
+                paramValues.add(obj);
+                paramSb.append(paramSqlNameMapping.get(field.getName())).append("=").append("?,");
+
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        if (paramValues.size() == 0) {
+            throw new RuntimeException("对象未设置属性");
+        }
+        String fieldStr = paramSb.toString();
+        fieldStr = fieldStr.substring(0, fieldStr.length() - 1);
+
+
+        sb.append(fieldStr).append(" where ").append(this.id).append("=").append("?");
+        paramValues.add(idValue);
+
+        UpdateObject updateObject = new UpdateObject(sb.toString(), paramValues.toArray());
+
+        return updateObject;
+    }
+
+    public UpdateObject createDeleteObject(T t) {
+        if (t == null) {
+            throw new RuntimeException("object is null");
+        }
+
+        if (this.id == null || "".equals(this.id.trim())) {
+            throw new RuntimeException("id is null");
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("delete from ").append(this.tableName).append(" where ");
+        List<Object> paramValues = new ArrayList<>();
+
+
+        Object idValue = null;
+
+        for (Field field : clazz.getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+
+                Object obj = field.get(t);
+                if (field.getName().equals(this.id)) {
+                    if(obj == null || "".equals(obj)) {
+                        throw new RuntimeException("id is null");
+                    }
+                    idValue = obj;
+                    break;
+                }
+
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        sb.append(this.id).append(" = ").append("?");
+        paramValues.add(idValue);
+
+        UpdateObject updateObject = new UpdateObject(sb.toString(), paramValues.toArray());
+
+        return updateObject;
+    }
+
+    public static class UpdateObject {
+        private String sql;
+
+        private Object[] objectValue;
+
+        public UpdateObject(String sql, Object[] objectValue) {
+            this.sql = sql;
+            this.objectValue = objectValue;
+        }
+
+        public String getSql() {
+            return sql;
+        }
+
+        public Object[] getObjectValue() {
+            return objectValue;
+        }
     }
 }

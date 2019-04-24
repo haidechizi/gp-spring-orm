@@ -26,4 +26,16 @@ public class SysLogDao extends BaseDaoSupport<SysLog, String> {
         queryRule.andEqual("type", type);
         return super.select(queryRule);
     }
+
+    public int insert(SysLog sysLog) {
+        return super.insert(sysLog);
+    }
+
+    public int update(SysLog sysLog) {
+        return super.update(sysLog);
+    }
+
+    public int delete(SysLog sysLog) {
+        return super.delete(sysLog);
+    }
 }
